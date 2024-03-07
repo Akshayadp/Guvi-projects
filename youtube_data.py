@@ -1,6 +1,5 @@
 from googleapiclient.discovery import build
 import pymongo
-#import MySQLdb
 import mysql.connector
 import pandas as pd
 import datetime
@@ -635,7 +634,15 @@ selected = option_menu(
 
 if selected == "Home":
     st.title("About")
-    st.text("Hello")
+    st.text('''Youtube Data Harvesting and Warehousing is a project that aims to allow users to 
+    access and analyze data from multiple youtube channels.This project helps to harvest 
+    channel and video details through MongodB and harvest it to SQL and view them.
+    
+    This project is developed using:
+    * Python Scripting
+    * MongodB
+    * MySQL 
+    * Streamlit''')
 
 #Harvest
 
